@@ -9,9 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-
-import java.sql.SQLException;
-
 @Controller
 @RequestMapping("/users")
 public class UsersController {
