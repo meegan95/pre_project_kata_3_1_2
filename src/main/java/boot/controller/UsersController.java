@@ -26,7 +26,7 @@ public class UsersController {
 
 
     @GetMapping()
-    public String index(@RequestParam(value = "count", required = false) Integer count, Model model) throws SQLException {
+    public String index(Model model){
         model.addAttribute("users", userService.findAll());
         return "users/index";
 
